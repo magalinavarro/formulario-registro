@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<!--    
+        =======================================
+                    HEAD
+        ======================================= 
+        -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!--    
+        =======================================
+                    HEADER SECTION
+        ======================================= 
+        -->
+
+    <header class="header-container">
+        <section class="card-header">
+            <img class="logo" src="https://s3.amazonaws.com/dg.invertironline.com/tests/img/logo-iol.svg" />
+            <nav id="navigation">
+                <div class="control-menu">
+                    <a href="#navigation" class="open"><i class="fas fa-bars"></i></a>
+                    <a href="#" class="close"><span>CERRAR</span></a>
+                </div>
+                <ul class="nav-items">
+                    <li id="Web-Dev"><a href="#"> <span>Iniciar sesión</span></a></li>
+                    <li id="Mobile"><a href="#"><span>Registrarse</span></a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <div class="column">
+
+        <!--    
+        =======================================
+                    FORM SECTION
+        ======================================= 
+        -->
+
+        <section class="card">
+            <div class="card-body">
+                <div class="content-container">
+                    <div class="registration" class="column">
+                        <div class="main-title">
+                            <h2 class="font-headline-6" class=>¡Comencemos el registro!</h2>
+                        </div>
+                        </br>
+
+                        <form class="registration-form">
+                            <div class="name-data">
+                                <div class="firstname">
+                                    <h4 class="font-title-title-1">Nombre</h4>
+                                    <input type="text" placeholder="Escribilo como figura en tu DNI" class="input-text"
+                                        required />
+                                </div>
+                                <div class="surname">
+                                    <h4 class="font-title-title-1">Apellido</h4>
+                                    <input type="text" placeholder="Escribilo como figura en tu DNI" class="input-text"
+                                        required />
+                                </div>
+                            </div>
+
+                            <div class="email-data">
+                                <div class="email">
+                                    <h4 class="font-title-title-1">Email</h4>
+                                    <input type="email" placeholder="minombre@ejemplo.com" class="input-text"
+                                        required />
+                                </div>
+                                <div class="repeat-email">
+                                    <h4 class="font-title-title-1">Confirmar Email</h4>
+                                    <input type="email" placeholder="minombre@ejemplo.com" class="input-text"
+                                        required />
+                                </div>
+                            </div>
+
+                            <div class="phone-data">
+
+                                <h4 class="font-title-title-1" class="phone-title">Celular</h4>
+                                <div class="phone-number">
+                                    <input type="tel" placeholder="Ej: 011" class="input-text" required />
+                                    <input type="tel" placeholder="1512345678" class="input-text" required />
+                                </div>
+
+                            </div>
+                            <div class="password-data">
+                                <div class="password">
+                                    <h4 class="font-title-title-1">Contraseña</h4>
+                                    <input type="password" placeholder="Escribí una contraseña" class="input-text"
+                                        pattern="[A-Za-z@#$%]{7}[0-9]{1}" required
+                                        title="La contraseña debe contener 8 caracteres y al menos uno debe ser un número" />
+                                </div>
+                                <div class="repeat-password">
+                                    <h4 class="font-title-title-1">Repetir contraseña</h4>
+                                    <input type="password" placeholder="Volvé a escribirla para confirmarla"
+                                        class="input-text" pattern="[A-Za-z@#$%]{7}[0-9]{1}" required
+                                        title="La contraseña debe contener 8 caracteres y al menos uno debe ser un número" />
+                                </div>
+
+                            </div>
+                            <div class="terms-conditions">
+                                <h5 class="font-subtitle">Al registrarme acepto haber leído y estar de acuerdo con las
+                                    <a id="special-links" href="#openModal">condiciones de
+                                        uso</a> y <a id="special-links" href="#openModal">política de privacidad</a>.
+                                </h5>
+                            </div>
+
+
+                            <!--         
+        =======================================
+            LEGAL TERMS SECTION
+        ======================================= 
+        -->
+                            <div id="openModal" class="modalDialog">
+                                <div class="general-modal">
+                                    <div class="text-container">
+                                        <div class="important-text">
+                                            <p class="font-intro">Términos y condiciones de uso</p>
+
+                                            <p class="font-body-1">Última actualización: Diciembre 2018</p>
+
+                                            <p class="font-body-1">GENERAL</p>
+                                            <p class="font-body-1">El acceso a este Sitio y la utilización de sus
+                                                servicios está sujeto a
+                                                los
+                                                términos y condiciones
+                                                generales que se establecen a continuación, y a las de índole particular
+                                                que
+                                                aparecen en sus anexos
+                                                o en las carteleras de una determinada página del mismo (en adelante,
+                                                los
+                                                "Términos y Condiciones").
+                                                De continuar Ud. (en adelante el "Usuario") la visita de este Sitio, se
+                                                entenderá que presta su conformidad
+                                                con los Términos y Condiciones.</p>
+
+                                            <p class="font-body-1">Estos Términos y Condiciones podrán estar sujetos a
+                                                actualizaciones y/o
+                                                modificaciones, las que entrarán en
+                                                vigencia a partir del plazo definido a tal efecto en el anexo C del
+                                                presente.
+                                            </p>
+
+                                            <p class="font-body-1">Servicio</p>
+
+                                            <p class="font-body-1">Éste consiste en un medio de información, publicidad
+                                                y comunicaciones
+                                                on-line
+                                                provisto
+                                                por
+                                                INVERTIRONLINE.com ARGENTINA S.A. o sus afiliadas (en adelante, "el
+                                                Titular"), y
+                                                supone
+                                                la
+                                                aceptación por el Usuario de estos Términos y Condiciones.
+                                            </p>
+
+                                            <p class="font-body-1">La información contenida en el Sitio proviene de
+                                                varias fuentes, entre
+                                                las
+                                                que se
+                                                cuentan
+                                                los propios
+                                                Usuarios del Servicio ("Proveedores de Información"). Dicha información
+                                                no
+                                                puede
+                                                considerarse exhaustiva, completa,
+                                                o que satisfará todas las necesidades del Usuario. En su gran mayoría,
+                                                esa
+                                                información
+                                                está meramente destinada a permitir
+                                                al Usuario el acceso a una mayor cantidad de datos sobre el tema de su
+                                                interés, los
+                                                que
+                                                generalmente son provistos por terceros,
+                                                sin un efectivo control por parte del Titular, por lo que se sugiere al
+                                                Usuario que
+                                                lea
+                                                con especial cuidado estos Términos y Condiciones.
+                                            </p>
+
+                                            <p class="font-body-1">Responsabilidad por la información contenida en el
+                                                Servicio.</p>
+                                            <p class="font-body-1">El Titular no se responsabiliza por los daños y
+                                                perjuicios que pudiera
+                                                ocasionar el
+                                                uso
+                                                de la información que provee el Servicio,
+                                                salvo que hubiera obrado con el propósito de causar daño.
+                                                El titular no garantiza la veracidad o vigencia de esa información, ni
+                                                que
+                                                dicha
+                                                información no haya sido alterada, luego de su inserción en el Sitio.
+                                            </p>
+
+                                            <p class="font-body-1">En caso que el Usuario se sienta agraviado o
+                                                perjudicado por esa
+                                                información,
+                                                deberá
+                                                dirigir su acción exclusivamente
+                                                contra el Proveedor de la misma. En tal supuesto, a pedido del Usuario,
+                                                el
+                                                Titular
+                                                pondrá a su disposición, en la medida que los posea, los datos
+                                                necesarios
+                                                para
+                                                que pueda hacer su reclamo.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="close-area">
+                                        <a href="#close" title="Close" class="close-x">X</a>
+                                        <div class="closing">
+                                            <a href="#close" class="violet-button">Cerrar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="welcome.html" type="submit" class="green-button">Registrarme</a>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--
+        =======================================
+                    FOOTER SECTION
+        ======================================= 
+        -->
+
+    <div class="footer-container">
+        <section class="card">
+
+            <div class="content-container">
+                <div class="business-info">
+                    <h5 class="font-body-2">© Copyright 2019 invertirOnline.com - San Martín 323 Piso 11, CABA,
+                        Argentina.
+                        Tel.
+                        0810-1222-465</h5>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
